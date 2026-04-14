@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+p{
+    /* this is ineternal css */  
+    color: red;
+    font-size: 16px;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- there are three ways to add css to a html document
+    1. inline css : withing the html tag
+    2. internal css : within the style tag in the head section
+    3. external css  within an external .css file-->
+    <h1 style="color: blue;">Hello, World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eaque ratione blanditiis dolorem nemo soluta deserunt ut voluptatum 
+        provident maxime, nam esse commodi omnis ipsum consequatur voluptatem, 
+        suscipit illo ipsa.</p>
+
+          <!-- Class vs ID selector:
+         Class: - A class selector is used to target multiple elements that share the same class attribute.
+                It is defined with a dot (.) followed by the class name. For example, .my-class would target all 
+                elements with the class "my-class". Classes are reusable and can be applied to multiple elements.
+         ID: - An ID selector is used to target a specific element with a unique ID attribute value. 
+               It is defined with a hash (#) followed by the ID name. For example, #my-id would target
+                the element with the ID "my-id". IDs must be unique within a document and can only be applied to one element. -->
+
+        <Button class="raj">Login</Button>
+        <a class="raj" href="">Home</a>
+        <a  class="raj">Contact</a>
+        <a class ="text">Text Link</a>
+        <a id ="login" href="">Login</a>
+
+        <!-- SELECTOR PRECEDENCE:
+        1. Inline styles have the highest precedence and will override any other styles defined in internal or external CSS.
+        2. Internal styles defined within the <style> tag in the head section will override external styles defined in an external CSS file.
+        3. External styles defined in an external CSS file will be overridden by both inline and internal styles if there are conflicting rules.
+        4. If there are multiple rules with the same specificity, the rule that appears last in the CSS will take precedence. 
+            This is known as the "cascade" in CSS, where the order of rules matters when determining which styles are applied to an element. --> -->
+
+       !impo
     
 </body>
 </html>
