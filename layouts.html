@@ -14,6 +14,38 @@
             background-color: lightblue;
             display: block;
         }
+
+        main{
+            background-color: lightgreen;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .chatbot{
+            width: 50px;
+            height: 50px;   
+            background-color: red;
+            /* position: absolute ; */
+            position: fixed;
+            /* z-index: 99; */
+            border-radius: 40px;
+           
+
+        }
+        .box{
+            width:fit-content;
+            /* width: 50px;
+            height: 50px; */
+            background-color: blue;
+            /* border-width: 2px;
+            border-style: dotted;
+            background-color: aqua; */
+            border: 2px solid black;
+            padding: 10px 15px 20px 25px;
+            margin: 10px 15px 20px 25px;;
+        }
+
     </style>
 </head>
 <body>
@@ -34,5 +66,22 @@
                 relative:-> it will be positioned relative to its normal position
                 absolute:-> it will be positioned relative to the nearest positioned ancestor
                 fixed:-> it will be positioned relative to the viewport -->
+
+        <main>
+            <div class="chatbot">
+                 <p>Box1</p>
+            </div>
+
+            <div class="box">
+                <p>Box 2</p>
+            </div>
+        </main>
+
+        <!-- CSS BOX MODEL -->
+        <!-- it is a box that wraps around every HTML element and it consists of 4 parts
+             content:-> it is the actual content of the element
+             padding:-> it is the space between the content and the border
+             border:-> it is the line that wraps around the padding and content
+             margin:-> it is the space between the border and the adjacent elements -->
 </body>
 </html>
