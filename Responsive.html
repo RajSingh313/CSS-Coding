@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+
+    <style>
+        /* Reset default margin */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ================= NAVBAR ================= */
+        .navbar {
+            display: flex; /* flexbox enable */
+            justify-content: space-between; /* left-right spacing */
+            align-items: center; /* vertical center */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 15px; /* space between items */
+        }
+
+        /* ================= MAIN FLEX CONTAINER ================= */
+        .parent {
+            display: flex; /* flexbox */
+            justify-content: space-around; /* equal spacing */
+            align-items: center; /* vertical center */
+            background-color: lightgray;
+            height: 200px;
+        }
+
+        .child {
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            width: 80px;
+            text-align: center;
+        }
+
+        /* ================= CARDS ================= */
+        .cards {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            padding: 20px;
+            flex: 1; /* equal width */
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* ================= CENTER LOGIN ================= */
+        .login-container {
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center; /* vertical center */
+            height: 200px;
+        }
+
+        .login-box {
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ================= FOOTER ================= */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<div class="navbar">
+    <div>Logo</div>
+    <div class="menu">
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+    </div>
+</div>
+
+<h1 style="text-align:center;">Flexbox Demo</h1>
+
+<!-- ================= BASIC FLEXBOX ================= -->
+<main class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+</main>
+
+<!-- ================= CARDS SECTION ================= -->
+<div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+</div>
+
+<!-- ================= CENTER LOGIN FORM ================= -->
+<div class="login-container">
+    <div class="login-box">
+        <h3>Login</h3>
+        <input type="text" placeholder="Username"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <button>Login</button>
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div class="footer">
+    <p>© 2026 Flexbox Practice</p>
+</div>
+
+</body>
+</html>
