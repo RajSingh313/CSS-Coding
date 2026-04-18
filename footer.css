@@ -1,0 +1,50 @@
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.footer-section{
+    margin: 10px; /* this will add some space between the sections */
+}
+
+.footer-section h3{
+    margin-bottom: 10px;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    color: yellowgreen;
+}
+
+.footer-bottom{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
